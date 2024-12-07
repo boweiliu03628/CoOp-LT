@@ -1,0 +1,27 @@
+** Config **
+backbone: clip_vit_b16
+ctp: end
+ctx_init: a photo of a
+dataset: cifar10
+lr: 0.002
+momentum: 0.9
+n_ctx: 5
+num_epochs: 50
+num_workers: 20
+output_dir: ./output/cifar10_clip_vit_b16/nctx_5_end_epoch_50
+seed: 1
+test_batch_size: 128
+test_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_test_features.pkl
+test_only: False
+train_batch_size: 128
+train_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_train_features.pkl
+weight_decay: 0.0005
+*****************************************************************
+Setting fixed seed: 1
+Building model
+Loading CLIP (backbone: clip_vit_b16)
+Device of ctx:  cuda:0
+Device of prefix:  cuda:0
+Device of suffix:  cuda:0
+cuda:0
+cpu

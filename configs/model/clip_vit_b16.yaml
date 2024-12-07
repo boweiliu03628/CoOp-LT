@@ -1,0 +1,3 @@
+n_ctx : 10
+ctp: "end"
+ctx_init: "a photo of a"

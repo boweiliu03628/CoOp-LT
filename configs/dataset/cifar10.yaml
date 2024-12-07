@@ -1,0 +1,8 @@
+train_img_path: "/home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_train_features.pkl"
+test_img_path: "/home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_test_features.pkl"
+
+
+num_epochs : 50
+train_batch_size: 1024
+test_batch_size: 1024
+

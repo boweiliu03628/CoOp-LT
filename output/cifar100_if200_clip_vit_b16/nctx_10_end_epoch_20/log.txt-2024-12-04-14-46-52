@@ -1,0 +1,23 @@
+** Config **
+backbone: clip_vit_b16
+ctp: end
+ctx_init: a photo of a
+dataset: cifar100_if200
+lr: 0.002
+momentum: 0.9
+n_ctx: 10
+num_epochs: 20
+num_workers: 16
+output_dir: ./output/cifar100_if200_clip_vit_b16/nctx_10_end_epoch_20
+seed: 1
+test_batch_size: 1024
+test_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar100_test_features.pkl
+test_only: False
+train_batch_size: 1024
+train_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar100_r200_100train_features.pkl
+weight_decay: 0.0005
+*************
+Setting fixed seed: 1
+Building model
+Loading CLIP (backbone: clip_vit_b16)
+Epoch 1/20, Train Loss: 1.1503, Train Accuracy: 0.7079, Test Accuracy: 0.6728

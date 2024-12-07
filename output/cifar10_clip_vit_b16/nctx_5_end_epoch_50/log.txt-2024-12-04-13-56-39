@@ -1,0 +1,34 @@
+** Config **
+backbone: clip_vit_b16
+ctp: end
+ctx_init: a photo of a
+dataset: cifar10
+lr: 0.002
+momentum: 0.9
+n_ctx: 5
+num_epochs: 50
+num_workers: 16
+output_dir: ./output/cifar10_clip_vit_b16/nctx_5_end_epoch_50
+seed: 1
+test_batch_size: 1024
+test_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_test_features.pkl
+test_only: True
+train_batch_size: 1024
+train_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar10_train_features.pkl
+weight_decay: 0.0005
+*************
+Setting fixed seed: 1
+Building model
+Loading CLIP (backbone: clip_vit_b16)
+test_only average accuracy is:  0.9556
+Accuracy of airplane: 0.9660
+Accuracy of automobile: 0.9840
+Accuracy of bird: 0.9390
+Accuracy of cat: 0.9180
+Accuracy of deer: 0.9530
+Accuracy of dog: 0.9270
+Accuracy of frog: 0.9630
+Accuracy of horse: 0.9660
+Accuracy of ship: 0.9760
+Accuracy of truck: 0.9640
+[0.966, 0.984, 0.939, 0.918, 0.953, 0.927, 0.963, 0.966, 0.976, 0.964]
