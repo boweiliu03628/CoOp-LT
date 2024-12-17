@@ -1,0 +1,145 @@
+** Config **
+backbone: clip_vit_b16
+ctp: end
+ctx_init: a photo of a
+dataset: cifar100_if100_outer
+lr: 0.002
+momentum: 0.9
+n_ctx: 10
+num_epochs: 20
+num_workers: 16
+output_dir: ./output/cifar100_if100_outer_clip_vit_b16/nctx_10_end_epoch_20
+seed: 1
+test_batch_size: 1024
+test_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar100_test_features.pkl
+test_only: False
+train_batch_size: 1024
+train_img_path: /home/bowei/Desktop/PyProjs/myb1/CLIP-B-16_pkl/cifar100_r100_100train_TO500_outer.pkl
+weight_decay: 0.0005
+*************
+Setting fixed seed: 1
+Building model
+Loading CLIP (backbone: clip_vit_b16)
+Epoch 1/20, Train Loss: 1.5657, Train Accuracy: 0.5962, Test Accuracy: 0.7137
+Epoch 2/20, Train Loss: 1.4022, Train Accuracy: 0.6264, Test Accuracy: 0.7242
+Epoch 3/20, Train Loss: 1.3233, Train Accuracy: 0.6433, Test Accuracy: 0.7313
+Epoch 4/20, Train Loss: 1.2763, Train Accuracy: 0.6549, Test Accuracy: 0.7329
+Epoch 5/20, Train Loss: 1.2397, Train Accuracy: 0.6618, Test Accuracy: 0.7325
+Epoch 6/20, Train Loss: 1.2144, Train Accuracy: 0.6713, Test Accuracy: 0.7299
+Epoch 7/20, Train Loss: 1.1934, Train Accuracy: 0.6752, Test Accuracy: 0.7325
+Epoch 8/20, Train Loss: 1.1737, Train Accuracy: 0.6804, Test Accuracy: 0.7335
+Epoch 9/20, Train Loss: 1.1597, Train Accuracy: 0.6839, Test Accuracy: 0.7394
+Epoch 10/20, Train Loss: 1.1466, Train Accuracy: 0.6871, Test Accuracy: 0.7381
+Epoch 11/20, Train Loss: 1.1302, Train Accuracy: 0.6926, Test Accuracy: 0.7344
+Epoch 12/20, Train Loss: 1.1194, Train Accuracy: 0.6938, Test Accuracy: 0.7376
+Epoch 13/20, Train Loss: 1.1070, Train Accuracy: 0.6976, Test Accuracy: 0.7367
+Epoch 14/20, Train Loss: 1.0994, Train Accuracy: 0.6997, Test Accuracy: 0.7365
+Epoch 15/20, Train Loss: 1.0883, Train Accuracy: 0.7026, Test Accuracy: 0.7393
+Epoch 16/20, Train Loss: 1.0808, Train Accuracy: 0.7050, Test Accuracy: 0.7374
+Epoch 17/20, Train Loss: 1.0736, Train Accuracy: 0.7063, Test Accuracy: 0.7368
+Epoch 18/20, Train Loss: 1.0685, Train Accuracy: 0.7073, Test Accuracy: 0.7379
+Epoch 19/20, Train Loss: 1.0648, Train Accuracy: 0.7086, Test Accuracy: 0.7368
+Epoch 20/20, Train Loss: 1.0625, Train Accuracy: 0.7093, Test Accuracy: 0.7372
+Best Test Accuracy: 0.7394 at Epoch 9
+Accuracy of apple: 0.9500
+Accuracy of aquarium_fish: 0.7700
+Accuracy of baby: 0.8000
+Accuracy of bear: 0.7300
+Accuracy of beaver: 0.4300
+Accuracy of bed: 0.7400
+Accuracy of bee: 0.7800
+Accuracy of beetle: 0.7300
+Accuracy of bicycle: 0.9000
+Accuracy of bottle: 0.9500
+Accuracy of bowl: 0.4600
+Accuracy of boy: 0.7100
+Accuracy of bridge: 0.8900
+Accuracy of bus: 0.8100
+Accuracy of butterfly: 0.7100
+Accuracy of camel: 0.8900
+Accuracy of can: 0.8600
+Accuracy of castle: 0.8400
+Accuracy of caterpillar: 0.6900
+Accuracy of cattle: 0.8600
+Accuracy of chair: 0.8200
+Accuracy of chimpanzee: 0.8700
+Accuracy of clock: 0.8600
+Accuracy of cloud: 0.7900
+Accuracy of cockroach: 0.8100
+Accuracy of couch: 0.7300
+Accuracy of crab: 0.5700
+Accuracy of crocodile: 0.4400
+Accuracy of cup: 0.8200
+Accuracy of dinosaur: 0.7000
+Accuracy of dolphin: 0.7000
+Accuracy of elephant: 0.8600
+Accuracy of flatfish: 0.5900
+Accuracy of forest: 0.6700
+Accuracy of fox: 0.8000
+Accuracy of girl: 0.7600
+Accuracy of hamster: 0.8100
+Accuracy of house: 0.8600
+Accuracy of kangaroo: 0.6000
+Accuracy of keyboard: 0.8600
+Accuracy of lamp: 0.7700
+Accuracy of lawn_mower: 0.8500
+Accuracy of leopard: 0.6000
+Accuracy of lion: 0.8100
+Accuracy of lizard: 0.6200
+Accuracy of lobster: 0.5200
+Accuracy of man: 0.8200
+Accuracy of maple_tree: 0.4800
+Accuracy of motorcycle: 0.9700
+Accuracy of mountain: 0.9200
+Accuracy of mouse: 0.5400
+Accuracy of mushroom: 0.7700
+Accuracy of oak_tree: 0.7600
+Accuracy of orange: 0.9500
+Accuracy of orchid: 0.8700
+Accuracy of otter: 0.3700
+Accuracy of palm_tree: 0.8900
+Accuracy of pear: 0.8100
+Accuracy of pickup_truck: 0.9500
+Accuracy of pine_tree: 0.6000
+Accuracy of plain: 0.7300
+Accuracy of plate: 0.6500
+Accuracy of poppy: 0.8600
+Accuracy of porcupine: 0.4000
+Accuracy of possum: 0.5300
+Accuracy of rabbit: 0.7500
+Accuracy of raccoon: 0.7500
+Accuracy of ray: 0.4700
+Accuracy of road: 0.9500
+Accuracy of rocket: 0.8700
+Accuracy of rose: 0.8200
+Accuracy of sea: 0.8900
+Accuracy of seal: 0.5200
+Accuracy of shark: 0.7200
+Accuracy of shrew: 0.3600
+Accuracy of skunk: 0.7000
+Accuracy of skyscraper: 0.9000
+Accuracy of snail: 0.7100
+Accuracy of snake: 0.8300
+Accuracy of spider: 0.6700
+Accuracy of squirrel: 0.6500
+Accuracy of streetcar: 0.6900
+Accuracy of sunflower: 0.9600
+Accuracy of sweet_pepper: 0.7100
+Accuracy of table: 0.7100
+Accuracy of tank: 0.7900
+Accuracy of telephone: 0.8400
+Accuracy of television: 0.8800
+Accuracy of tiger: 0.6500
+Accuracy of tractor: 0.9700
+Accuracy of train: 0.7500
+Accuracy of trout: 0.7200
+Accuracy of tulip: 0.6900
+Accuracy of turtle: 0.5400
+Accuracy of wardrobe: 0.8300
+Accuracy of whale: 0.5600
+Accuracy of willow_tree: 0.5600
+Accuracy of wolf: 0.6300
+Accuracy of woman: 0.8100
+Accuracy of worm: 0.6300
+[0.95, 0.77, 0.8, 0.73, 0.43, 0.74, 0.78, 0.73, 0.9, 0.95, 0.46, 0.71, 0.89, 0.81, 0.71, 0.89, 0.86, 0.84, 0.69, 0.86, 0.82, 0.87, 0.86, 0.79, 0.81, 0.73, 0.57, 0.44, 0.82, 0.7, 0.7, 0.86, 0.59, 0.67, 0.8, 0.76, 0.81, 0.86, 0.6, 0.86, 0.77, 0.85, 0.6, 0.81, 0.62, 0.52, 0.82, 0.48, 0.97, 0.92, 0.54, 0.77, 0.76, 0.95, 0.87, 0.37, 0.89, 0.81, 0.95, 0.6, 0.73, 0.65, 0.86, 0.4, 0.53, 0.75, 0.75, 0.47, 0.95, 0.87, 0.82, 0.89, 0.52, 0.72, 0.36, 0.7, 0.9, 0.71, 0.83, 0.67, 0.65, 0.69, 0.96, 0.71, 0.71, 0.79, 0.84, 0.88, 0.65, 0.97, 0.75, 0.72, 0.69, 0.54, 0.83, 0.56, 0.56, 0.63, 0.81, 0.63]
+average accuracy is: 0.7394

@@ -6,7 +6,6 @@ from cooplt import CoOpLT
 from clip import clip
 import torch.nn as nn
 import pickle
-import pickle
 
 
 
@@ -20,7 +19,9 @@ def load_clip_to_cpu(backbone_name):
 def dataset_map(dataset_name):
     dataset_mapping={
         'cifar10': 'CIFAR10_LT',
-        'cifar100_if200': 'CIFAR100_LT'
+        'cifar100_if200': 'CIFAR100_LT',
+        'cifar100_if100': 'CIFAR100_LT',
+        'cifar100_if100_outer': 'CIFAR100_LT'
     }
     return dataset_mapping[dataset_name]
 
@@ -30,10 +31,7 @@ def backbone_map(backbone_name):
     }
     return backbone_mapping[backbone_name]
 
-# def save2excel(dataset,class_acc):
-#     df = pd.read_excel('./output/class_acc.xlsx')
-#     df[dataset] = class_acc
-#     df.to_excel('./output/class_acc.xlsx', index=False)  
+
 
 class Trainer:
     def __init__(self, cfg):
@@ -161,7 +159,7 @@ class Trainer:
             pickle.dump(class_accuracies, f)
         accuracy = sum(class_accuracies) / len(class_accuracies)
         print(f"average accuracy is: {accuracy:.4f}")
-        # save2excel(cfg.dataset,class_accuracies)
+
 
     def test_only(self):
         self.test_per_class()

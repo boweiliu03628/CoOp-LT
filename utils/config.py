@@ -9,7 +9,7 @@ _C.num_workers = 16
 _C.lr = 0.002
 _C.weight_decay = 5e-4
 _C.momentum = 0.9
-_C.test_only=True
+_C.test_only=False
 
 
 _C.train_img_path=''
